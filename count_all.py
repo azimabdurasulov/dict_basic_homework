@@ -7,13 +7,12 @@ def count_all(txt):
     Returns:
         dict: dictionary with letters and digits
     """
-    letter = 0
-    digit = 0
+    letters = 0
+    digits = 0
     for i in txt:
-        if txt[i].isalpha():
-            letter += 1
-
-        elif txt[i].isdigit():
-            digit += 1
-    answer = {"LETTERS": letter, "DIGITS": digit}
+        if i.isalpha():
+            letters+=1
+        if i.isdigit():
+            digits+=1
+    answer = {'LETTERS':letters,'DIGITS':digits}
     return answer
