@@ -15,5 +15,5 @@ def count_all(txt):
 
         elif txt[i].isdigit():
             digit += 1
-
-    return {"LETTERS": letter, "DIGITS": digit}
+    answer = {"LETTERS": letter, "DIGITS": digit}
+    return answer
