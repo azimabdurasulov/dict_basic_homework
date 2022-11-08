@@ -9,11 +9,11 @@ def count_all(txt):
     """
     letter = 0
     digit = 0
-    for i in range(len(count_all)):
-        if count_all[i].isalpha():
+    for i in txt:
+        if txt[i].isalpha():
             letter += 1
 
-        elif count_all[i].isdigit():
+        elif txt[i].isdigit():
             digit += 1
 
     return {"LETTERS": letter, "DIGITS": digit}
